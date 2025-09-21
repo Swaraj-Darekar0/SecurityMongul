@@ -11,8 +11,8 @@ A comprehensive platform for automated security analysis of GitHub repositories 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Swaraj-Darekar0/SecurityMongul.git
+cd SecurityMongul
 ```
 
 ---
