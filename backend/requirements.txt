@@ -1,0 +1,12 @@
+flask
+flask-cors
+requests
+python-dotenv
+transformers
+torch
+pandas
+numpy
+python-docx
+pypandoc
+gitpython
+google-generativeai

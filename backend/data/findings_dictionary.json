@@ -1,0 +1,48 @@
+{
+  "SQLI-UNSAN-INPUT": {
+    "title": "SQL Injection via Unsanitized Input",
+    "description": "The application constructs SQL queries using unsanitized user input, which can allow attackers to manipulate query logic and access unauthorized data.",
+    "remediation_steps": [
+      "Use parameterized queries or prepared statements",
+      "Implement input validation and sanitization",
+      "Use ORM frameworks that handle parameterization",
+      "Apply principle of least privilege for database access"
+    ],
+    "compliance_mappings": {
+      "OWASP_TOP_10": "A03:2021 – Injection",
+      "CWE": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command",
+      "PCI_DSS": "Requirement 6.2.4",
+      "SOC2": "CC6.1"
+    }
+  },
+  "XSS-UNESC-OUTPUT": {
+    "title": "Cross-Site Scripting (XSS) via Unescaped Output",
+    "description": "User-controlled data is rendered in web pages without proper encoding, allowing attackers to inject malicious scripts.",
+    "remediation_steps": [
+      "Implement output encoding/escaping",
+      "Use Content Security Policy (CSP)",
+      "Validate and sanitize all input",
+      "Use secure templating engines"
+    ],
+    "compliance_mappings": {
+      "OWASP_TOP_10": "A03:2021 – Injection",
+      "CWE": "CWE-79: Improper Neutralization of Input During Web Page Generation",
+      "PCI_DSS": "Requirement 6.2.4"
+    }
+  },
+  "HARDCODED-SECRET": {
+    "title": "Hardcoded Credentials",
+    "description": "Sensitive credentials are hardcoded in the source code, making them accessible to anyone with code access.",
+    "remediation_steps": [
+      "Use environment variables for sensitive data",
+      "Implement secure credential management systems",
+      "Use encrypted configuration files",
+      "Implement proper access controls"
+    ],
+    "compliance_mappings": {
+      "OWASP_TOP_10": "A07:2021 – Identification and Authentication Failures",
+      "CWE": "CWE-798: Use of Hard-coded Credentials",
+      "SOC2": "CC6.1"
+    }
+  }
+}
